@@ -10,7 +10,6 @@
         android:supportsRtl="true"
         android:theme="@android:style/Theme.Light.NoTitleBar">
         <activity android:name=".ui.SplashActivity">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -18,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.MainActivity" />
-        <activity android:name=".ui.GuideActivity"></activity>
+        <activity android:name=".ui.GuideActivity" />
+        <activity android:name=".ui.CityActivity"></activity>
     </application>
 
 </manifest>

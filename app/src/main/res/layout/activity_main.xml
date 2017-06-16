@@ -4,12 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.example.tarena.groupon.ui.MainActivity">
+<include
+    layout="@layout/inflate_toolbar_layout"/>
 
-    <com.handmark.pulltorefresh.library.PullToRefreshListView
-        android:id="@+id/pullToRefresh_ListView_main"
+
+
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        />
+        android:layout_weight="1"
+        android:layout_height="0dp">
 
+        <include
+            android:id="@+id/menu_layout"
+            android:layout_width="150dp"
+            android:layout_height="180dp"
+            android:layout_gravity="right"
+            layout="@layout/menu_layout"
+            android:visibility="invisible"
+            />
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/pullToRefresh_ListView_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        layout="@layout/include_radiogroup_bottom_button" />
 </LinearLayout>
