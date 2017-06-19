@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -27,6 +28,7 @@ import butterknife.OnClick;
 
 public class MainActivity extends Activity {
     //头部
+
     LinearLayout cityContainer;
     TextView tvCity; //显示城市名称
     ImageView ivAdd;
@@ -116,6 +118,7 @@ public class MainActivity extends Activity {
         datas.add("fff");
         datas.add("ggg");
         adapter.notifyDataSetChanged();
+
 
     }
 }
